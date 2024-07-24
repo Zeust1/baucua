@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bầu cua</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+
+            <div class="header">
+                <img src="./img/bau.png" alt="img" id="header-1">
+                <img src="./img/bau.png" alt="img" id="header-2">
+                <img src="./img/bau.png" alt="img" id="header-3">
+            </div>
+
+          <div class="roll"><button class="btn" id="roll">Quay</button></div>
+
+          <div class="main" id="main">
+            <div><p id="bauPoint">0</p><img src="./img/bau.png" alt="img" id="bau" onclick="setPoints(this.id)"></div>
+            <div><p id="cuaPoint">0</p><img src="./img/cua.png" alt="img" id="cua" onclick="setPoints(this.id)"></div>
+            <div><p id="tomPoint">0</p><img src="./img/tom.png" alt="img" id="tom" onclick="setPoints(this.id)"></div>
+            <div><p id="caPoint">0</p><img src="./img/ca.png" alt="img" id="ca" onclick="setPoints(this.id)"></div>
+            <div><p id="huouPoint">0</p><img src="./img/huou.png" alt="img" id="huou" onclick="setPoints(this.id)"></div>
+            <div><p id="gaPoint">0</p><img src="./img/ga.png" alt="img" id="ga" onclick="setPoints(this.id)"></div>
+          </div>
+
+          <div class="reset">
+            <div>
+                <p>Lưu ý:</p>
+                <p>- Số lần đặt ở một 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên</p>
+                <p>'Kết quả'</p>
+                <p>- Tổng số điểm đặt trong một lần, tối đa là 3</p>
+            </div>
+
+            <div><button class="btn" id="reset" onclick="resetBtn()">Đặt lại</button></div>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
